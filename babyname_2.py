@@ -10,10 +10,10 @@ results = 0
 
 if gender.lower() == "boy":
     with open('boynames.txt', 'rt') as in_file:  # Open file boynames.txt for reading of text data.
-            for line in in_file:  # Store each line in a string variable "line"
-                    if pattern.search(line):
-                        results += 1
-                        print(last_name.capitalize()+", "+line)  # Print last name and first name
+        for line in in_file:  # Store each line in a string variable "line"
+            if pattern.search(line):
+                results += 1
+                print(last_name.capitalize()+", "+line)  # Print last name and first name
 
 if gender.lower() == "girl":
     with open('girlnames.txt', 'rt') as in_file:  # Open file boynames.txt for reading of text data.
